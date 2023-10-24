@@ -3,7 +3,9 @@ import Landing from './landing.jsx'
 import Cafe3 from './cafe3.jsx'
 import TopDog from './topdog.jsx'
 import NavigationBar from './navbar.jsx'
+
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css' 
 
 
 function App() {
@@ -29,6 +31,5 @@ function App() {
 function NotFound() {
   return <>'404 Not Found Trollface'</>
 }
-
 
 export default App

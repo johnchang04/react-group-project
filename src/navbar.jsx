@@ -1,11 +1,13 @@
-import React from 'react'; 
+import React, {Component} from 'react'; 
 import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 
-function NavigationBar() {
+class NavigationBar extends Component {
+  render() {
     return (
       <Navbar bg="dark" expand="lg">
           <Navbar.Brand></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <LinkContainer to="/landing"><Nav.Link>Home</Nav.Link></LinkContainer>
@@ -25,6 +27,7 @@ function NavigationBar() {
           </Navbar.Collapse>
       </Navbar>
     )
+  }
 }
 
 export default NavigationBar; 
