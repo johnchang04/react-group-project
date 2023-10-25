@@ -1,5 +1,5 @@
 import './App.css'
-import CommentSection from '/comments';
+import CommentSection from './comments';
 import restaurantStyle from './restaurant';
 
 function sizzlingLunch() {
