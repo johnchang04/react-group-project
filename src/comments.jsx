@@ -5,7 +5,7 @@ import {useState} from 'react';
 function CommentSection() {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState(''); 
-  const [newUsername, setNewUsername] = useState(''); 
+
 
   const handleCommentChange = (event) => {
     setNewComment(event.target.value); // sets newComment to event's value
@@ -13,9 +13,8 @@ function CommentSection() {
 
   const addComment = () => {
     if (newComment.trim() !== '') {  // if newComment is not empty
-      setComments([...comments, newUsername + ' says: ' + newComment]); // setComments appends newComment to comments list
+      setComments([...comments, newComment]); // setComments appends newComment to comments list
       setNewComment(''); // reset newComment to empty
-      setNewUsername(''); 
     }
   };
 
@@ -23,14 +22,6 @@ function CommentSection() {
     <Container>
           <h2>Comment Section</h2>
           <Form>
-            <Form.Group>
-                <Form.Control
-                  type="text"
-                  placeholder="Your name"
-                  value={newUsername}
-                  onChange={(event) => setNewUsername(event.target.value)}
-                />
-            </Form.Group>
             <Form.Group className="mb-3">
                 <Form.Control
                   as="textarea"

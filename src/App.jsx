@@ -32,7 +32,7 @@ function App() {
 }
 
 function NotFound() {
-  return <>'404 Not Found Trollface'</>
+  return <><div><img src="https://www.boostability.com/content/wp-content/uploads/sites/2/2012/10/BOOST_BLOG_IMAGE_RB_SET_10_404_PAGE_1200x628px_v1_3.jpg"></img></div></>
 }
 
 export default App
