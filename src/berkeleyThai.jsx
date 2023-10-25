@@ -16,7 +16,7 @@ function berkeleyThaiHouse() {
             Their patio is nice, when its not freezing in Berkeley. 
             </p>
     </div>
-      
+       <CommentSection/>
        
   )
 }
