@@ -58,7 +58,7 @@ function Cafe3() {
         <img src="https://i.pinimg.com/originals/24/7f/82/247f824c4687fcbafae6ca3a8d719ca1.png"></img>
       </div>
 
-      <CommentSection/>
+      <CommentSection pageId="cafe3"/>
 
       </div>
       

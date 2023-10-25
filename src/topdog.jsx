@@ -52,7 +52,7 @@ Enjoying a frankfurter after a lively frat party at UC Berkeley is a cherished t
         <img src="https://s3-media0.fl.yelpcdn.com/bphoto/8SSBs1Htk4ZcDL0ZCYy83w/o.jpg"></img>
       </div>
      
-      <CommentSection /> 
+      <CommentSection pageId="topdog"/> 
     </div>
     </div>
   );

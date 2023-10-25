@@ -36,7 +36,7 @@ function Marugame() {
       </div>
     </div>
 
-    <CommentSection/>
+    <CommentSection pageId="marugame"/>
     </div>
     
 

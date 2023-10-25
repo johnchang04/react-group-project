@@ -1,45 +1,75 @@
-import {Form, InputGroup, Container, Row, Col, ListGroup, Button} from 'react-bootstrap';
-import {useState} from 'react'; 
+import {Form, Button} from 'react-bootstrap';
+import Comment from './comment';
+import {useState, useEffect} from 'react'; 
 
 
-function CommentSection() {
+const CommentSection = ({pageId}) => {
+  const storageKey = `comments_${pageId}`;
   const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState(''); 
+  const [newComment, setNewComment] = useState({ author: '', text: '', timestamp: ''}); 
+
+  useEffect(() => {
+    const storedComments = JSON.parse(localStorage.getItem(storageKey));
+    if (storedComments) {
+      setComments(storedComments);
+    }
+  }, [storageKey]);
+
+  const saveCommentsToLocalStorage = (comments) => {
+    localStorage.setItem(storageKey, JSON.stringify(comments));
+  };
 
 
-  const handleCommentChange = (event) => {
-    setNewComment(event.target.value); // sets newComment to event's value
-  }; 
-
-  const addComment = () => {
-    if (newComment.trim() !== '') {  // if newComment is not empty
-      setComments([...comments, newComment]); // setComments appends newComment to comments list
-      setNewComment(''); // reset newComment to empty
+  const handleCommentSubmit = () => {
+    if (newComment.author && newComment.text) {
+      const updatedComments = [
+        ...comments,
+        { ...newComment, timestamp: new Date().toLocaleString() },
+      ];
+      setComments(updatedComments);
+      saveCommentsToLocalStorage(updatedComments);
+      setNewComment({ author: '', text: '' });
     }
   };
 
   return (
-    <Container>
-          <h2>Comment Section</h2>
-          <Form>
-            <Form.Group className="mb-3">
-                <Form.Control
-                  as="textarea"
-                  rows={3}
-                  placeholder="Add a comment"
-                  value={newComment}
-                  onChange={handleCommentChange}
-                />
-            </Form.Group>
-                <Button variant="primary" onClick={addComment}>Post</Button>
-            
-          </Form>
-          <ListGroup>
-            {comments.map((comment, index) => (
-              <ListGroup.Item key={index}>{comment}</ListGroup.Item>
-            ))}
-          </ListGroup>
-    </Container>
+    <div>
+      <br/><br/> 
+      <h2>Comments</h2>
+      <br/>
+
+      <div className="comment-list">
+        {comments.map((comment, index) => (
+          <Comment key={index} {...comment} />
+        ))}
+      </div>
+
+      <br/>
+      <Form>
+        <Form.Group controlId="author">
+          <Form.Control
+            type="text"
+            placeholder="Your Name"
+            value={newComment.author}
+            onChange={(e) => setNewComment({ ...newComment, author: e.target.value })}
+          />
+        </Form.Group>
+        <Form.Group controlId="text">
+          <Form.Control
+            as="textarea"
+            rows={3}
+            placeholder="Add your comment here"
+            value={newComment.text}
+            onChange={(e) => setNewComment({ ...newComment, text: e.target.value })}
+          />
+        </Form.Group>
+        <br/>
+        <Button variant="primary" onClick={handleCommentSubmit}>
+          Add Comment
+        </Button>
+      </Form>
+      <br/>
+    </div>
   );
 }
 
