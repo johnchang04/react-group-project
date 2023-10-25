@@ -4,6 +4,7 @@ import restaurantStyle from './restaurant';
 
 function sizzlingLunch() {
   return (
+    <>
     <div>
       <style> {restaurantStyle()} </style>
       <h1> Sizzling Lunch </h1>
@@ -15,7 +16,7 @@ function sizzlingLunch() {
             </p>
     </div>
     <CommentSection/>
-        
+    </>
   )
 }
 export default sizzlingLunch;
