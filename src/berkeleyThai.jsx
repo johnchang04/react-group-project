@@ -1,6 +1,6 @@
 import './App.css'
 import CommentSection from '/comments';
-import restaurantStyle from '.restaurant';
+import restaurantStyle from './restaurant';
 
 function berkeleyThaiHouse() {
   return (
