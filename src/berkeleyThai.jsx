@@ -8,7 +8,7 @@ function BerkeleyThaiHouse() {
     <div> 
       <style> {restaurantStyle()} </style>
       <h1> Berkeley Thai House </h1>
-      <img src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.com%2FRestaurant_Review-g32066-d547241-Reviews-Berkeley_thai_House-Berkeley_California.html&psig=AOvVaw1v01lMSUDPBuvn5sbzHgwN&ust=1698294109111000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJiyy9qskIIDFQAAAAAdAAAAABAE'
+      <img src = 'https://media-cdn.tripadvisor.com/media/photo-s/1b/c3/94/8b/berkeley-thai-house.jpg'
             alt = ''
             />
      <p className="my-element"> Berkeley Thai House on Channing Ave is the epitome of middle tier thai food. 
