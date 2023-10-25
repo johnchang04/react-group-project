@@ -4,6 +4,7 @@ import restaurantStyle from './restaurant';
 
 function purpleKow() {
   return (
+    <>
     <div> 
       <style> {restaurantStyle()} </style>
       <h1> Purple Kow </h1>
@@ -16,7 +17,7 @@ function purpleKow() {
             </p>
     </div>
        <CommentSection/>
-       
+    </>   
   )
 }
 export default purpleKow;
