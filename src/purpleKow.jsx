@@ -8,7 +8,7 @@ function PurpleKow() {
     <div> 
       <style> {restaurantStyle()} </style>
       <h1> Purple Kow </h1>
-      <img src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpurplekow.com%2F&psig=AOvVaw0MtKjESp4xrBjgEMc34dqW&ust=1698306116530000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLCwlLjZkIIDFQAAAAAdAAAAABAE'
+      <img src = 'https://images.squarespace-cdn.com/content/v1/621bf6636f8fc80032cbf560/c6549295-7801-47db-a857-72ac96684997/DSC00197.jpg'
             />
      <p className="my-element"> Purple Kow is a bubble tea shop in Berkeley with locations all around the bay area. 
        They are special because of their cup sizes, with a small that looks like a large and a large that looks like a xxl. 
