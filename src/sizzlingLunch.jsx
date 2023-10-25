@@ -5,6 +5,7 @@ import restaurantStyle from '.restaurant';
 function sizzlingLunch() {
   return (
     <div>
+      <style> {restaurantStyle()} </style>
       <h1> Sizzling Lunch </h1>
        <img src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.visitberkeley.com%2Fdirectory%2Fsizzling-lunch%2F&psig=AOvVaw00Sd4XPWLFiOn1uTRsqy2g&ust=1698305312898000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCICOk7nWkIIDFQAAAAAdAAAAABAE'
             />
