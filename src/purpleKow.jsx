@@ -2,7 +2,7 @@ import './App.css'
 import CommentSection from './comments';
 import restaurantStyle from './restaurant';
 
-function purpleKow() {
+function PurpleKow() {
   return (
     <>
     <div> 
@@ -20,4 +20,4 @@ function purpleKow() {
     </>   
   )
 }
-export default purpleKow;
+export default PurpleKow;

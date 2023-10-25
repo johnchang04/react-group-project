@@ -2,7 +2,7 @@ import './App.css'
 import CommentSection from './comments';
 import restaurantStyle from './restaurant';
 
-function berkeleyThaiHouse() {
+function BerkeleyThaiHouse() {
   return (
     <>
     <div> 
@@ -17,8 +17,8 @@ function berkeleyThaiHouse() {
             Their patio is nice, when its not freezing in Berkeley. 
             </p>
     </div>
-       <CommentSection/>
+       <CommentSection id="thaihouse"/>
     </>   
   )
 }
-export default berkeleyThaiHouse;
+export default BerkeleyThaiHouse;

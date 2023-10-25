@@ -19,8 +19,11 @@ class NavigationBar extends Component {
 
               <NavDropdown title="Restaurants" id="basic-nav-dropdown">
                 <LinkContainer to="/marugame"><NavDropdown.Item>Marugame</NavDropdown.Item></LinkContainer>
+                <LinkContainer to="/purplekow"><NavDropdown.Item>Purple Kow</NavDropdown.Item></LinkContainer>
+                <LinkContainer to="/sizzlinglunch"><NavDropdown.Item>Sizzling Lunch</NavDropdown.Item></LinkContainer>
                 <LinkContainer to="/cafe3"><NavDropdown.Item>Cafe 3</NavDropdown.Item></LinkContainer>
                 <LinkContainer to="/topdog"><NavDropdown.Item>Top Dog</NavDropdown.Item></LinkContainer>
+                <LinkContainer to="/berkeleythai"><NavDropdown.Item>Berkeley Thai House</NavDropdown.Item></LinkContainer>
                 <NavDropdown.Divider />
                 <LinkContainer to="/topdog"><Nav.Link>Chef's Choice</Nav.Link></LinkContainer>
               </NavDropdown>

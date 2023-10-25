@@ -2,7 +2,7 @@ import './App.css'
 import CommentSection from './comments';
 import restaurantStyle from './restaurant';
 
-function sizzlingLunch() {
+function SizzlingLunch() {
   return (
     <>
     <div>
@@ -19,4 +19,4 @@ function sizzlingLunch() {
     </>
   )
 }
-export default sizzlingLunch;
+export default SizzlingLunch;
