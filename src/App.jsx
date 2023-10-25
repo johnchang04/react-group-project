@@ -4,9 +4,9 @@ import Cafe3 from './cafe3.jsx'
 import TopDog from './topdog.jsx'
 import NavigationBar from './navbar.jsx'
 import About from './about.jsx'
-import berkeleyThaiHouse from '.berkeleyThai.jsx'
-import purpleKow from '.purpleKow.jsx'
-import sizzlingLunch from 'sizzlingLunch.jsx'
+import berkeleyThaiHouse from './berkeleyThai.jsx'
+import purpleKow from './purpleKow.jsx'
+import sizzlingLunch from './sizzlingLunch.jsx'
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css'
