@@ -1,9 +1,10 @@
 import './App.css'
-import CommentSection from '/comments';
+import CommentSection from './comments';
 import restaurantStyle from './restaurant';
 
 function berkeleyThaiHouse() {
   return (
+    <>
     <div> 
       <style> {restaurantStyle()} </style>
       <h1> Berkeley Thai House </h1>
@@ -17,7 +18,7 @@ function berkeleyThaiHouse() {
             </p>
     </div>
        <CommentSection/>
-       
+    </>   
   )
 }
 export default berkeleyThaiHouse;
