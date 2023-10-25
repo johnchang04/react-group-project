@@ -1,47 +1,12 @@
 import './App.css'
+import CommentSection from './comments';
+import restaurantStyle from './restaurant';
 
 function Marugame() {
 
-  const marugameStyle = `
-    h1 {
-      padding: 30px;
-    }
-    
-    p {
-      text-align: left;
-    }
-
-    img {
-      padding: 30px;
-    }
-
-    .menu {
-      display: flex;
-      flex-direction: column;
-      padding: 30px;
-    }
-
-    .menu-item {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      
-    }
-
-    .menu-item > img {
-      width: 300px;
-    }
-
-    .menu-description {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  `
-
   return (
     <div>
-    <style>{marugameStyle}</style>
+    <style>{restaurantStyle()}</style>
     <h1>Marugame</h1>
     <p>Marugame Udon is a culinary delight that transcends the boundaries of a simple noodle dish. This Japanese fast-casual restaurant chain has carved a special place in the hearts of food enthusiasts with its commitment to delivering authentic, handmade udon noodles prepared right before your eyes. Each visit to Marugame Udon is a sensory experience, from the tantalizing aroma of freshly cooked noodles to the mesmerizing sight of udon craftsmen expertly kneading and cutting the dough. The menu is a testament to versatility, offering a variety of udon soups, tempura dishes, and customizable options to cater to every palate. It's a place where the simplicity of udon meets the complexity of flavor, and where tradition and innovation unite to create a memorable dining adventure. Marugame Udon truly embodies the essence of Japanese cuisine, making it a must-visit for those seeking an authentic and delightful culinary journey.</p>
     <img src="https://s3.amazonaws.com/secretsaucefiles/photos/images/000/228/117/large/Marugame_Food_Overhead.jpg?1571626851"></img>
@@ -70,7 +35,11 @@ function Marugame() {
         <img src="https://marugameudon.b-cdn.net/wp-content/uploads/2020/08/Tonkotsu_Udon-1-280x280.png"></img>
       </div>
     </div>
+
+    <CommentSection/>
     </div>
+    
+
     
   );
 }
