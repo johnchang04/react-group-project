@@ -4,9 +4,9 @@ import Cafe3 from './cafe3.jsx'
 import TopDog from './topdog.jsx'
 import NavigationBar from './navbar.jsx'
 import About from './about.jsx'
-import BerkeleyThaiHouse from './berkeleyThai.jsx'
-import PurpleKow from './purpleKow.jsx'
-import SizzlingLunch from './sizzlingLunch.jsx'
+import BerkeleyThaiHouse from './berkeleythai.jsx'
+import PurpleKow from './purplekow.jsx'
+import SizzlingLunch from './sizzlinglunch.jsx'
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css'
@@ -34,7 +34,6 @@ function App() {
         </Routes>
 
       </Router>
-
   )
 }
 
